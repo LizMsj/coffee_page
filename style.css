@@ -191,7 +191,7 @@
 }
 
 .story_wrap_img {
-    background-image: url("/images/devyshka.jpg");
+    background-image: url("./images/devyshka.jpg");
     width: 100%;
     height: auto;
 }
