@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald';
+    font-weight: 300;
+    font-size: 20px;
+    font-style: normal;
+    color: #000;
+}
+
+/* Меню */
+
+.menu {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 80px;
+}
+
+.menu_ul {
+    list-style: none;
+    display: flex;
+    justify-content: right;
+    margin-top:  37px;
+}
+
+.menu_link {
+    text-decoration: none;
+}
+
+.menu_link:hover, .menu_link:active, .menu_link:focus {
+    transition: 0.5s;
+    text-shadow: 1px 1px 2px rgb(8, 5, 5), 0 0 1em  #817070, 0 0 0.2em rgb(47, 42, 47);
+}
+
+.menu_li_word {
+    margin-left: 46px;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.logo {
+    font-weight: 500;
+    font-size: 5vh;
+    line-height: 53px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 29px 0;
+}
+
+@media screen and (max-width: 900px) {
+    .menu_ul {
+        margin-top: 15px;
+    }
+    .menu {
+        padding: 0 50px;
+    }
+
+    .menu_li_word {
+        margin-left: 20px;
+        font-size: 20px;
+    }
+    
+    .logo {
+        font-weight: 700;
+        font-size: 4vh;
+        margin: 5px 0;
+    }
+}
+@media screen and (max-width: 600px) {
+    .menu_ul {
+        margin: 0;
+    }
+    .menu {
+        padding: 0 18px;
+    }
+
+    .menu_li_word {
+        margin-left: 10px;
+        background: rgba(128, 112, 112, 0.62);
+        border-radius: 0 0 5px  5px;
+        margin-right: 5%;
+        padding: 0 5px;
+        margin-bottom: 26px;
+        font-weight: 400;
+        font-size: 15px;
+        display: flex;
+        align-items: end;
+
+    }
+    
+    .logo {
+        font-weight: 900;
+        color: #000000;
+        font-size: 20px;
+        margin: 20px 0;
+        width: 100px;
+        line-height: 30px;
+    }
+
+    .world {
+        font-weight: 400;
+        font-size: 15px;
+        text-transform: uppercase;
+        color: #5C4B4B;
+    }
+
+    .menu_li_word:hover, .menu_li_word:active, .menu_li_word:focus {
+        transition: 0.2s;
+        background: rgba(128, 112, 112, 0.9);
+    }
+
+    .menu_link:hover, .menu_link:active, .menu_link:focus {
+        text-shadow: none;
+    }
+}
+/* Меню закончилось, стилизуем секция 1: take your time */
+
+.section_header {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.section__header_image {
+    width: 100%;
+    height: auto;
+}
+
+.section_header_wrap_text {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+
+.section_header_wrap_text:hover, .section_header_wrap_text:active, .section_header_wrap_text:focus {
+    transition: 1s;
+    background: linear-gradient(217deg, rgba(255,0,0,.4), rgba(255,0,0,0) 70.71%),
+                linear-gradient(127deg, rgba(0,255,0,.4), rgba(0,255,0,0) 70.71%),
+                linear-gradient(336deg, rgba(0,0,255,.4), rgba(0,0,255,0) 90.71%);
+}
+
+.section_header_text {
+    font-weight: 700;
+    font-size: 8.5vh;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.section_header_line {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.line_head {
+    height: 10px;
+    width: 80px;
+    background-color: #817070;
+}
+
+@media screen and (max-width: 900px) {
+    .section_header_text {
+        font-weight: 700;
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .section_header_text {
+        font-weight: 600;
+        font-size: 30px;
+    }
+
+    .line_head {
+        width: 40px;
+        height: 4px;
+    }
+}
+
+/* секция1 закончилась, стилизуем секция 2: story */
+
+.section_story {
+    display: flex;
+}
+
+.story_wrap_img {
+    background-image: url("/images/devyshka.jpg");
+    width: 100%;
+    height: auto;
+}
